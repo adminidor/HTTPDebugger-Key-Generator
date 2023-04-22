@@ -68,6 +68,7 @@ std::string genLicenseKey() {
 int main() {
 	srand(time(NULL));
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTitleA("HTTP Debugger Key Generator");
 	
     int appVer = parseAppVer(readRegistryValue(HKEY_CURRENT_USER, "Software\\MadeForNet\\HTTPDebuggerPro", "AppVer"));
 	std::cout << "HTTPDebugger Version:   ";
